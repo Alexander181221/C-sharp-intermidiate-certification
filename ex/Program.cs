@@ -2,6 +2,13 @@
 int count = Convert.ToInt32(Console.ReadLine());
 string[] array = new string[count];
 
+FillArray(array);
+Console.WriteLine();
+PrintArray(array);
+string[] res = GreaterOrLesserValue(array);
+Console.WriteLine();
+PrintArray(res);
+
 void FillArray(string[] arr)
 {
     for (int i = 0; i < arr.Length; i++)
@@ -39,9 +46,9 @@ string[] GreaterOrLesserValue(string[] array)
 
 }
 
-void PrintArray (string[] arr)
+void PrintArray(string[] arr)
 {
-    for ( int i = 0; i < arr.Length; i++)
+    for (int i = 0; i < arr.Length; i++)
     {
         Console.WriteLine(arr[i]);
     }
